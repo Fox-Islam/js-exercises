@@ -1,7 +1,7 @@
 
 const chai = require('chai'),
     expect = chai.expect,
-    { 
+    {
         sayHello,
         multiply,
         calculateSum,

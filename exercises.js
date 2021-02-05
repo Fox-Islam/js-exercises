@@ -1,6 +1,6 @@
 /**
  * @description Returns a greeting to the name provided as the input of the form "Hello, {name}"
- * @param {string} name 
+ * @param {string} name
  * @returns {string}
  */
 function sayHello(name) {
@@ -9,8 +9,8 @@ function sayHello(name) {
 
 /**
  * @description Multiplies the two input numbers together and returns the value
- * @param {number} first 
- * @param {number} second 
+ * @param {number} first
+ * @param {number} second
  * @returns {number}
  */
 function multiply(first, second) {
@@ -24,7 +24,7 @@ function multiply(first, second) {
  *    "lastName": "Bbb"
  * }
  * and returns the full name in the form "Aaa Bbb"
- * @param {Object} person 
+ * @param {Object} person
  * @returns {string}
  */
 function getFullName(person) {
@@ -33,7 +33,7 @@ function getFullName(person) {
 
 /**
  * @description Adds an array of numbers together and returns the total
- * @param {number[]} numbers 
+ * @param {number[]} numbers
  * @returns {number}
  */
 function calculateSum(numbers) {
@@ -52,7 +52,7 @@ function insertString(sentence, insertString) {
 
 /**
  * @description Filters an array down to only the items that contain a given search string
- * @param {string[]} haystacks 
+ * @param {string[]} haystacks
  * @param {string} needle
  * @returns {string[]}
  */
