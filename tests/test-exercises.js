@@ -103,7 +103,7 @@ describe('When altering a string using the reverseAWord function', function () {
     });
 });
 
-describe('When altering an array of strings using the reverseAWord function', function () {
+describe('When altering an array of strings using the reverseEveryWord function', function () {
     it('Should be able to reverse one word', function () {
         expect(reverseEveryWord(["hello"])).to.eql(["olleh"]);
     });
