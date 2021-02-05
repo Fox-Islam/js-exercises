@@ -1,0 +1,21 @@
+name: Node
+
+on:
+  push:
+    branches: 
+      - '**'
+
+jobs:
+  check-solutions:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v2
+
+    - name: Install dependencies
+      run: npm install
+    - name: Check PR for mis-pushed solutions
+      run: npm run check-solutions 
