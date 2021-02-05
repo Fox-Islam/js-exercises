@@ -14,7 +14,7 @@ npm test
 
 You should see a list of failing tests (Somewhere along the lines of `AssertionError: expected 'Your Result' to deeply equal...`)
 
-To start making those tests pass, open up the 'exercises.js' file where you'll see a bunch of empty functions waiting to be filled in. 
+To start making those tests pass, open up the 'exercises.js' file where you'll see a bunch of empty functions waiting to be filled in.
 
 Feel free to create additional functions in the file to use within the pre-defined exercise functions but changing the exercise function names or the number of inputs they take in is likely to cause the tests to fail.
 

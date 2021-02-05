@@ -1,15 +1,15 @@
 const chai = require('chai'),
-expect = chai.expect,
-{ 
-    sayHello,
-    multiply,
-    calculateSum,
-    getFullName,
-    insertString,
-    getWordsWhichContain,
-    reverseAWord,
-    reverseEveryWord,
-} = require('../../exercises');
+    expect = chai.expect,
+    {
+        sayHello,
+        multiply,
+        calculateSum,
+        getFullName,
+        insertString,
+        getWordsWhichContain,
+        reverseAWord,
+        reverseEveryWord,
+    } = require('../../exercises');
 
 describe('When calling the sayHello function', function () {
     it('Should return "Your Result"', function () {
