@@ -7,6 +7,7 @@ const chai = require('chai'),
         calculateSum,
         getFullName,
         insertString,
+        autoContract,
         getWordsWhichContain,
         reverseAWord,
         reverseEveryWord,
@@ -67,6 +68,49 @@ describe('When altering a string using the insertString function', function () {
         expect(insertString("This is a sentence", " :) ")).to.eql("This :) is :) a :) sentence");
     });
 });
+
+describe('When altering a string using the autoContract function', function () {
+    it('Should be able to contract "it is"', function () {
+        expect(autoContract("it is")).to.eql("it's");
+    });
+
+    it('Should be able to contract "we have"', function () {
+        expect(autoContract("we have")).to.eql("we've");
+    });
+
+    it('Should be able to contract "he had"', function () {
+        expect(autoContract("he had")).to.eql("he'd");
+    });
+
+    it('Should be able to contract "they would"', function () {
+        expect(autoContract("they would")).to.eql("they'd");
+    });
+
+    it('Should be able to contract "she will"', function () {
+        expect(autoContract("she will")).to.eql("she'll");
+    });
+
+    it('Should be able to contract "we are"', function () {
+        expect(autoContract("we are")).to.eql("we're");
+    });
+
+    it('Should be able to contract "could not"', function () {
+        expect(autoContract("could not")).to.eql("couldn't");
+    });
+
+    it('Should be able to contract "you all"', function () {
+        expect(autoContract("you all")).to.eql("y'all");
+    });
+
+    it('Should be able to contract "you all would not have had"', function () {
+        expect(autoContract("you all would not have had")).to.eql("y'all'dn't've'd");
+    });
+
+    it('Should be able to contract "would not have had you all?"', function () {
+        expect(autoContract("would you all not have had?")).to.eql("would y'alln't've'd?");
+    });
+});
+
 
 describe('When filtering an array using the getWordsWhichContain function', function () {
     it('Should be able to filter down to items containing a character', function () {

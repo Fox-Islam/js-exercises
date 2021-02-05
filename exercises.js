@@ -51,6 +51,25 @@ function insertString(sentence, insertString) {
 }
 
 /**
+ * @description Replaces parts of a sentence with some common contractions
+ * [word -> replaced with (example)]
+ * is -> 's (it is -> it's)
+ * am -> 'm (I am -> I'm)
+ * have -> 've (I have -> I've)
+ * had -> 'd (he had -> he'd)
+ * would -> 'd (they would -> they'd)
+ * will -> 'll (she will -> she'll)
+ * are -> 're (we are -> we're)
+ * not -> n't (could not -> couldn't)
+ * you -> y' (you all -> y'all)
+ * @param {string} sentence
+ * @returns {string}
+ */
+function autoContract(sentence) {
+   return 'Your Result';
+}
+
+/**
  * @description Filters an array down to only the items that contain a given search string
  * @param {string[]} haystacks
  * @param {string} needle
@@ -84,6 +103,7 @@ module.exports = {
    calculateSum,
    getFullName,
    insertString,
+   autoContract,
    getWordsWhichContain,
    reverseAWord,
    reverseEveryWord,
