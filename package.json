@@ -4,8 +4,8 @@
   "description": "Exercise(s?) for JavaScript practice",
   "main": "exercises.js",
   "scripts": {
-    "test": "mocha 'tests' --recursive --exit",
-    "check-solutions": "mocha 'actions/checks' --recursive --exit"
+    "check-answers": "node check/exercises.test.js",
+    "test": "mocha 'tests' --recursive --exit"
   },
   "author": "Fox Islam",
   "license": "ISC",

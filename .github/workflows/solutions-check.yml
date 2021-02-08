@@ -18,4 +18,4 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Check PR for mis-pushed solutions
-      run: npm run check-solutions
+      run: npm test

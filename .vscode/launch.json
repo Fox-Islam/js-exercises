@@ -2,34 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "name": "Run current file",
+      "program": "${file}",
       "request": "launch",
-      "name": "Run tests in debug mode",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--timeout",
-        "999999",
-        "--colors",
-        "--recursive",
-        "${workspaceFolder}/tests"
+      "skipFiles": [
+        "<node_internals>/**"
       ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "type": "pwa-node"
     },
     {
-      "type": "node",
+      "name": "Check answers in debug mode",
+      "program": "${workspaceFolder}/check/exercises.test.js",
       "request": "launch",
-      "name": "Run current test file in debug mode",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--timeout",
-        "999999",
-        "--colors",
-        "--recursive",
-        "${file}"
+      "skipFiles": [
+        "<node_internals>/**"
       ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "type": "pwa-node"
     }
   ]
 }

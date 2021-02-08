@@ -9,10 +9,10 @@ npm install
 ```
 followed by
 ```
-npm test
+npm run check-answers
 ```
 
-You should see a list of failing tests (Somewhere along the lines of `AssertionError: expected 'Your Result' to deeply equal...`)
+You should see a list of failing tests (Somewhere along the lines of `❌ Successn't... Expected 'Your Result' to equal`)
 
 To start making those tests pass, open up the 'exercises.js' file where you'll see a bunch of empty functions waiting to be filled in.
 
@@ -21,11 +21,10 @@ Feel free to create additional functions in the file to use within the pre-defin
 As an example to get you going, in exercises.js we have a `sayHello(name)` function, when we run the tests initially it says the tests for that function fail because
 ```
 1) When calling the sayHello function
-      Should be able to say hello to Alice:
-      AssertionError: expected 'Your Result' to deeply equal 'Hello, Alice'
-2) When calling the sayHello function
+      - Should be able to say hello to Alice:
+      ❌ Successn't... Expected "Your Result" to equal "Hello, Alice"
       Should be able to say hello to Bob:
-      AssertionError: expected 'Your Result' to deeply equal 'Hello, Bob'
+      ❌ Successn't... Expected "Your Result" to equal "Hello, Bob"
 ```
 To get these tests to pass we need to modify the `sayHello` function to be
 ```javascript
@@ -33,4 +32,4 @@ function sayHello(name) {
    return 'Hello, ' + name;
 }
 ```
-If you run the tests now you should be able to see that those two tests pass
+If you check your answers now you should be able to see that those two tests pass
