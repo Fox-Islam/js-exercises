@@ -1,6 +1,6 @@
 const chai = require('chai'),
     expect = chai.expect,
-    exercises = require('../../exercises');
+    exercises = require('../exercises');
 
 describe('When calling the exercise functions', function () {
     for (index in exercises) {
