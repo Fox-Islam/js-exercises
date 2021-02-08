@@ -1,9 +1,14 @@
 # js-exercises
 Simple exercises to get a handle on JavaScript
 
-To get started either clone this repository using git/GitHub Desktop/github-cli or download it as a .zip folder and extract the contents manually.
+## Getting started
+### CodeSandbox
+The quickest way to get started is to [click this link to the CodeSandbox page for this repo](https://codesandbox.io/s/js-exercises-lqsd1?file=/exercises.js), double-click the 'Console' (There should be a tab at the bottom of the panel on the right-hand side) to open it up. You should see a list of failing tests in your console (Somewhere along the lines of `❌ Successn't... Expected 'Your Result' to equal`)
 
-From the project directory run
+Whenever you make a change to a file, CodeSandbox will automatically re-run the answer checker and the console output will be refreshed.
+
+### Running the exercises locally
+To run the exercises on your computer clone this repository using git/GitHub Desktop/github-cli or download it as a .zip folder and extract the contents manually, then (from the project directory) run
 ```
 npm install
 ```
@@ -11,13 +16,16 @@ followed by
 ```
 npm run check-answers
 ```
+You should see a list of failing tests in your console (Somewhere along the lines of `❌ Successn't... Expected 'Your Result' to equal`)
 
-You should see a list of failing tests (Somewhere along the lines of `❌ Successn't... Expected 'Your Result' to equal`)
+Whenever you want to re-run the tests, run `npm run check-answers`
 
-To start making those tests pass, open up the 'exercises.js' file where you'll see a bunch of empty functions waiting to be filled in.
+## Now what?
+To start making those tests pass, open up the 'exercises.js' file (It should already be opened in the CodeSandbox link) where you'll see a bunch of functions `return`ing `"Your Result"` for you to modify.
 
 Feel free to create additional functions in the file to use within the pre-defined exercise functions but changing the exercise function names or the number of inputs they take in is likely to cause the tests to fail.
 
+## Example
 As an example to get you going, in exercises.js we have a `sayHello(name)` function, when we run the tests initially it says the tests for that function fail because
 ```
 1) When calling the sayHello function
