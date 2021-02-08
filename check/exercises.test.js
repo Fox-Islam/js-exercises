@@ -155,7 +155,7 @@ describe("When altering a string using the autoContract function", function () {
         outputTestResult(actual, expected);
     });
 
-    it('Should be able to contract "would not have had you all?"', function () {
+    it('Should be able to contract "would you all not have had?"', function () {
         let actual = autoContract("would you all not have had?");
         let expected = "would y'alln't've'd?";
         outputTestResult(actual, expected);
