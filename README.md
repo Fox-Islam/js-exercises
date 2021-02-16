@@ -20,6 +20,8 @@ You should see a list of failing tests in your console (Somewhere along the line
 
 Whenever you want to re-run the tests, run `npm run check-answers`
 
+If you want to run a test for a single function run `npm run check-answers <function name>` (for example `npm run check-answers sayHello`)
+
 ## Now what?
 To start making those tests pass, open up the 'exercises.js' file (It should already be opened in the CodeSandbox link) where you'll see a bunch of functions `return`ing `"Your Result"` for you to modify.
 
@@ -31,6 +33,7 @@ As an example to get you going, in exercises.js we have a `sayHello(name)` funct
 1) When calling the sayHello function
       - Should be able to say hello to Alice:
       ❌ Successn't... Expected "Your Result" to equal "Hello, Alice"
+
       Should be able to say hello to Bob:
       ❌ Successn't... Expected "Your Result" to equal "Hello, Bob"
 ```
