@@ -1,3 +1,4 @@
+const filterArgument = process.argv[2];
 const colourFormat = process.stdout ? "%s" : "%c";
 const greenText = process.stdout ? "\x1b[32m" : "color: #70e21d";
 const redText = process.stdout ? "\x1b[31m" : "color: #ff0000";
@@ -17,6 +18,9 @@ function initialise() {
 }
 
 function describe(message, callback) {
+    if (filterArgument && !message.toLowerCase().includes(filterArgument.toLowerCase())) {
+        return;
+    }
     numberOfDescribes++;
     console.log(numberOfDescribes + ') ' + message + ":");
     callback();
